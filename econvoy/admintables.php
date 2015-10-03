@@ -1,4 +1,13 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: Arvind
+ * Date: 03-Oct-15
+ * Time: 6:27 PM
+ */
+?>
+
+<?php
 session_start();
 if(isset($_SESSION['name']))
 {
@@ -35,6 +44,7 @@ else
 }
 
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,6 +56,8 @@ else
     <!-- CORE CSS-->
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="https://cdn.datatables.net/1.10.9/css/jquery.dataTables.min.css" type="text/css" rel="stylesheet" media="screen,projection">
+
 </head>
 
 <body>
@@ -91,73 +103,39 @@ else
             <li class="bold active"><a href="dashboard.php" class="waves-effect waves-cyan"><i class="mdi-action-account-circle"></i> Team</a>
             </li>
             </li>
-            <li class="bold active"><a href="admintables.php" class="waves-effect waves-cyan"><i class="mdi-editor-border-all"></i> Tables</a>
+            <li class="bold active"><a href="dashboard.php" class="waves-effect waves-cyan"><i class="mdi-editor-border-all"></i> Tables</a>
             </li>
             <li class="no-padding">
                 <ul class="collapsible collapsible-accordion">
                 </ul>
             </li>
             <li class="li-hover"><div class="divider"></div></li>
-             <li><a href="php/logout.php"><i class='mdi-content-send'></i>Logout</a>
+            <li><a href="php/logout.php"><i class='mdi-content-send'></i>Logout</a>
         </ul>
         <a href="#" data-activates="slide-out" class="sidebar-collapse btn-floating btn-medium  hide-on-large-only"><i class="mdi-navigation-menu"></i></a>
     </div>
     <!-- END SIDE NAVBAR -->
     <!-- //////////////////////////////////////////////////////////////////////////// -->
     <!-- START CONTENT -->
-        <section id="content">
-            <!--start container-->
-            <div class="container">
-                <!--card stats start-->
-                <div id="card-stats">
-                    <div class="row">
-                        <h1 class="center ">Statistics</h1>
-                        <div class="col s12 m6 l3">
-                            <div class="card">
-                                <div class="card-content  green white-text">
-                                    <p class="card-stats-title"><i class="mdi-social-group-add"></i> Users</p>
-                                    <h4 class="card-stats-number">000</h4>
-                                    <p class="card-stats-compare">0% from yesterday</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col s12 m6 l3">
-                            <div class="card">
-                                <div class="card-content purple white-text">
-                                    <p class="card-stats-title"><i class="mdi-editor-attach-file"></i> Reports</p>
-                                    <h4 class="card-stats-number"><?php echo "0" ?></h4>
-                                    <p class="card-stats-compare"></i> 0% last month</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col s12 m6 l3">
-                            <div class="card">
-                                <div class="card-content blue-grey white-text">
-                                    <p class="card-stats-title"><i class="mdi-action-trending-up"></i>Today Hits</p>
-                                    <h4 class="card-stats-number">000</h4>
-                                    <p class="card-stats-compare"></i> 0% <span class="blue-grey-text text-lighten-5">from yesterday</span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col s12 m6 l3">
-                            <div class="card">
-                                <div class="card-content pink lighten-2 white-text">
-                                    <p class="card-stats-title"><i class="mdi-editor-insert-drive-file"></i>Overall</p>
-                                    <h4 class="card-stats-number">000</h4>
-                                    <p class="card-stats-compare"> 0% <span class="deep-purple-text text-lighten-5">from last month</span></p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <!--card stats end-->
-                <!-- //////////////////////////////////////////////////////////////////////////// -->
+    <section id="content">
+        <!--start container-->
+        <div class="container">
+            <div class="col s12 m8 l9">
+                <table id="employee-grid"  cellpadding="0" cellspacing="0" border="0" class="display" width="100%">
+                    <thead>
+                    <tr>
+                        <th>Employee name</th>
+                        <th>Salary</th>
+                        <th>Age</th>
+                    </tr>
+                    </thead>
+                </table>
             </div>
-            <!--end container-->
-        </section>
-    </div>
-    <!-- END WRAPPER -->
+        </div>
+        <!--end container-->
+    </section>
+</div>
+<!-- END WRAPPER -->
 </div>
 <!-- END MAIN -->
 <!-- //////////////////////////////////////////////////////////////////////////// -->
@@ -181,6 +159,8 @@ Scripts
 <script type="text/javascript" src="js/materialize.js"></script>
 <!--Extra-->
 <script type="text/javascript" src="js/plugin.js"></script>
+<!-- Data Tables -->
+<script  type="javascript" src="https://cdn.datatables.net/1.10.9/js/jquery.dataTables.min.js"></script>
+
 </body>
 </html>
-

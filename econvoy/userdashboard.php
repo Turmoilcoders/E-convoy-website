@@ -77,7 +77,7 @@ else {
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html">E-CONVOY</a>
+            <a class="navbar-brand" href="#">E-CONVOY</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -159,7 +159,7 @@ else {
                 <hr>
             </div>
             <div class="clearfix"></div>
-            <small><em>The core power of <b>LawHub </b>is our services. As you can see there are numbers of services we are providing which helps the people in most helping manner. </em></small>
+            <small><em>The core power of <b>E-convoy </b>is our services. As you can see there are numbers of services we are providing which helps the people in most helping manner. </em></small>
         </div>
         <div class="space"></div>
         <div class="row">
@@ -177,32 +177,32 @@ else {
             </div>
 
             <div class="col-md-3 col-sm-6 service">
-                <a href="lost%20and%20found%20page.html"><img src="img/services/04.jpg" alt="..." class="img-circle team-img">
+                <a href="lost%20and%20found%20page.php"><img src="img/services/04.jpg" alt="..." class="img-circle team-img">
                     <h4><strong>Lost & Found</strong></h4></a>
                 <p>Have you lost any of your valuables ?<br>Have you found any ?</p>
 
             </div>
 
             <div class="col-md-3 col-sm-6 service">
-                <a href="missing%20person.html"><img src="img/services/05.jpg" alt="..." class="img-circle team-img">
+                <a href="missing.php"><img src="img/services/05.jpg" alt="..." class="img-circle team-img">
                     <h4><strong>Missing Person</strong></h4></a>
                 <p>Look for your loved ones if they are missing. Let the world know if you found someone innocent</p>
             </div>
 
             <div class="col-md-3 col-sm-6 service">
-                <a href="un-identified%20deadbodies%20found.html"><img src="img/services/01.jpg" alt="..." class="img-circle team-img">
+                <a href="#"><img src="img/services/01.jpg" alt="..." class="img-circle team-img">
                     <h4><strong>Unidentified Dead Bodies</strong></h4></a>
                 <p>Have you found something unusual in your backyard? Let us know.</p>
             </div>
 
             <div class="col-md-3 col-sm-6 service">
-                <a href="stolen%20vechicle%20search.html"><img src="img/services/06.jpg" alt="..." class="img-circle team-img">
+                <a href="stolen%20vechicle%20search.php"><img src="img/services/06.jpg" alt="..." class="img-circle team-img">
                     <h4><strong>Stolen Vehicles</strong></h4></a>
                 <p>Give us your registration details or identity of your vehicle if it is stolen or chekc in our menifest</p>
             </div>
 
             <div class="col-md-3 col-sm-6 service">
-                <a href="unclaimed%20vechicle%20search.html"><img src="img/services/07.jpg" alt="..." class="img-circle team-img">
+                <a href="unclaimed%20vechicle%20search.php"><img src="img/services/07.jpg" alt="..." class="img-circle team-img">
                     <h4><strong>Unclaimed Vehicles</strong></h4></a>
                 <p>Have you found any unclaimed vehicle ? Let us know.</p>
             </div>

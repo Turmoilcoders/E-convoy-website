@@ -77,7 +77,7 @@ if (isset($_POST['register'])) {
         $hash = hashSSHA($password);
         $encrypted_password = $hash["encrypted"]; // encrypted password
         $salt = $hash["salt"]; // salt
-        $query = "INSERT INTO users(unique_id, name, email, type, encrypt_paswd, salt, created_at) VALUES ('$uuid', '$name', '$email', '$type', '$encrypted_password' , '$salt', NOW())";
+        $query = "INSERT INTO users(unique_id, name, email, type, encrypt_paswd, salt, created_at, Status) VALUES ('$uuid', '$name', '$email', '$type', '$encrypted_password' , '$salt', NOW() , 'NO')";
         $result = mysqli_query($conn, $query);
         // check for successful store
         if ($result) {

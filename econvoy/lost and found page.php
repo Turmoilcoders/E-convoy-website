@@ -28,6 +28,7 @@ else
     $_SESSION['name'] = "logout";
     header('Location:http://localhost:90/econvoy/');
 }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -38,7 +39,7 @@ else
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>LawHub : A small contribution to Indin Government</title>
     <meta name="description" content="This is a tool based on crime and law">
-    <meta name="keywords" content="indian law system,laws,law students,crime,crime analysis, crime statistics, fir, fir registration">
+    <meta name="keywords" content="indian law system,laws,law students,crime,crime analysis, crime statistics, Lost, Lost registration">
 
     <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
@@ -58,8 +59,6 @@ else
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400' rel='stylesheet' type='text/css'>
 
     <script type="text/javascript" src="js/modernizr.custom.js"></script>
-
-
 
 </head>
 
@@ -84,11 +83,12 @@ else
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#tf-home" class="page-scroll">What?</a></li>
-                <li><a href="#tf-fir" class="page-scroll">Fill the FIR form</a></li>
-                <li><a href="#tf-s-fir" class="page-scroll">Status of FIR</a></li>
-                <li><a href="#tf-faq" class="page-scroll">Faq FIR</a></li>
+                <li><a href="#tf-found" class="page-scroll">Fill the Found form</a></li>
+				<li><a href="#tf-lost" class="page-scroll">Fill the lost form</a></li>
+                <li><a href="#tf-s-lost" class="page-scroll">Status</a></li>
+                <li><a href="#tf-faq" class="page-scroll">FAQ</a></li>
                 <li><a href="userdashboard.php" class="page-scroll">Back to home</a></li>
-                <li><a href="php/logout.php" class="page-scroll">Log Out</a></li>
+				<li><a href="index.php" class="page-scroll">Log Out</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -99,193 +99,248 @@ else
 <div id="tf-home" class="text-center">
     <div class="overlay">
         <div class="content">
-            <h1>Welcome on <strong><span class="color">"FIR"</span></strong></h1>
-            <p class="lead">First information Report is important aspect in <strong>Judicary</strong> Here you can do that off line work <strong>online </strong></p>
-            <a href="#tf-fir" class="fa fa-angle-down page-scroll"></a>
+            <h1>Welcome on <strong><span class="color">"LOST AND FOUND"</span></strong></h1>
+            <p class="lead">Lost report is important aspect in finding <strong>Items</strong> Here you can do that off line work <strong>online </strong></p>
+            <a href="#tf-found" class="fa fa-angle-down page-scroll"></a>
         </div>
     </div>
 </div>
 
-<!-- Form Page
+<!-- Found Form Page
 ==========================================-->
 
-<div id="tf-fir" class="center"  >
-    <div class="container" style="color:black;">
+<div id="tf-found" class="center">
+    <div class="container">
+
         <div class="row">
-            <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-8 col-md-offset-2">  
+
                 <div class="section-title center text-center">
-                    <h1 style="color: #FCAC45">FIR Proforma</h1>
-                    <div class="line" >
+                    <h2>FORM FOR <strong>FOUND ITEMS</strong></h2>
+                    <div class="line">
                         <hr>
                     </div>
                     <div class="clearfix"></div>
                     <big><em>A wrong filling of report is also a crime</em></big><br>
                     <small><em>We welcome genuine details</em></small>
                 </div>
+
+                <div id="forma" style="color: black ;">
+                    <form action="php/missing.php" method="POST" enctype="multipart/form-data">
+                        <h3>Personnel Submitting item Details:</h3>
+                        <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label >Name:</label>
+								<input type="text" class="form-control" id="f_name" name="f_name" placeholder="Enter your name">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label >Your Email</label>
+                                <input type="text" name="f_email" class="form-control" id="f_email" placeholder="Enter your e-mail">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label >Contact Number</label>
+                                <input type="number" name="f_cont_number" class="form-control" id="f_cont_number" placeholder="Contact Number">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label >Aadhar card number</label>
+                                <input type="number" name="f_aadharcard number" class="form-control" id="f_aadharcard number" placeholder="15 digit personal number">
+                            </div>
+                        </div>
+                    </div>
+                      <h3>Item Description:</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label >ITEM FOUND</label>
+                                <input type="text" name="Item Found" class="form-control" id="item found" placeholder="name of the item found">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label >Description</label>
+                                <input type="text" name="f_description" class="form-control" id="f_description" placeholder="Description of item that is found in detail">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label >Location </label>
+                                <input type="text" name="f_location" class="form-control" id="f_location" placeholder="Nearby landmark where the item was found">
+                            </div>
+                        </div>
+                    </div><hr>
+
+                    <!-- Need to add a  Thanks message after submitting items and requesting them to submit item  -->
+
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <br><button type="submit" name="submit" class="btn tf-btn btn-default">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<br>
+<br>
+
+
+<!-- Lost Form Page
+==========================================-->
+
+<div id="tf-lost" class="center">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">  
+
+                <div class="section-title text-center center">
+                    <h2>FORM FOR <strong>LOST ITEMS</strong></h2>
+                    <div class="line center">
+                        <hr>
+                    </div>
+                    <div class="clearfix"></div>
+                    <big><em>A wrong filling of report is also a crime</em></big><br>
+                    <small><em>We welcome genuine details</em></small>
+                </div>
+
                 <div id="forma" style="color: black">
-                    <form action="./php/fir.php" method="POST" enctype="multipart/form-data">
-                        <h3>Personel Details</h3><br>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label>Name:</label>
-                                    <input type="text" name="P_name" class="form-control" id="name" placeholder="Enter your name">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label>Father's/Husband Name</label>
-                                    <input type="text" name="F_name" class="form-control" id="F_Name" placeholder="Entername">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label>Your Phone Number</label>
-                                    <input type="text" name="phone_number" class="form-control" id="phone_number" placeholder="Enter your phone number">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label>E-mail</label>
-                                    <input type="text" name="e-mail" class="form-control" id="e-mail" placeholder="Enter your e-mail id">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label>Address</label>
-                                    <textarea class="form-control" name="Address" rows="4"></textarea>
-                                </div>
-                            </div>
-                        </div>
-                        <h3>Place of Occurence</h3>
-                        <br>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label>Landmark</label>
-                                    <input type="text" name="Distance_station" class="form-control" id="Distance_station" placeholder="Give nearby landmark place of incident ">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label >Direction </label>
-                                    <input type="text" name="Direction" class="form-control" id="Direction" placeholder="Give direction from a landmark to incident">
-                                </div>
-                            </div>
-                        </div>
-                        <h3>Date and Hour of occurence</h3>
-                        <br>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label >Time</label>
-                                    <input type="time" name="Time" class="form-control" id="Time" placeholder="Time at which the crime took place">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-6 ">
-                                <div class="form-group">
-                                    <label >Date</label>
-                                    <input type="date" name="Date" class="form-control" id="Date" placeholder="Date of incident">
-                                </div>
-                            </div>
-                        </div>
-                        <h3>Offence:</h3>
-                        <br>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group ">
-                                    <label >Nature</label>
-                                    <input type="text" name="Nature" class="form-control" id="Nature" placeholder="Natue of crime/type of Crime">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label >Property if stolen item</label>
-                                    <input type="text" name="Property" class="form-control" id="Property" placeholder="Particulars of the property">
-                                </div>
-                            </div>
-                        </div>
-                        <h3>Description of the accused:</h3>
-                        <br>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label>Discription</label>
-                                    <textarea class="form-control" name="accused_discription" rows="4"></textarea>
-                                </div>
-                            </div>
-                        </div>
-                        <h3>Witness:</h3>
-                        <br>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label >Witness Name</label>
-                                    <input type="text" name="witness" class="form-control" id="witness" placeholder="report any witness that could have seen the crime you are reporting about.">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label>Your Phone Number</label>
-                                    <input type="number" name="witness_phone_number" class="form-control" id="" placeholder="Enter your phone number">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label>E-mail</label>
-                                    <input type="text" name="witness_e-mail" class="form-control" id="email" placeholder="Enter witness e-mail id">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label>Address</label>
-                                    <textarea class="form-control" name="W_Address" rows="4"></textarea>
-                                </div>
-                            </div>
-                        </div>
+                    <form action="php/missing.php" method="POST" enctype="multipart/form-data">
+                    <div class="row">
                         <h3>Complaint Description:</h3>
-                        <br>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label >Complainant's Name:</label>
+								<input type="text" class="form-control" name="c_name" id="c_name" placeholder="Enter your name">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label >Complainant's Email</label>
+                                <input type="text" name="y_name" class="form-control" id="exampleInputEmail1" placeholder="Enter your e-mail">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label >Complainant's Contact Number</label>
+                                <input type="number" name="cont_number" class="form-control" id="cont_number" placeholder="Contact Number">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label >Complainant's Aadhar card number</label>
+                                <input type="number" name="aadharcard number" class="form-control" id="aadharcard number" placeholder="15 digit personal number">
+                            </div>
+                        </div>
+                    </div>
+                        <h3>Item Description:</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label >ITEM LOST</label>
+                                <input type="text" name="Item lost" class="form-control" id="itemlost" placeholder="name of the item lost">
+                            </div>
+                        </div>
+                    </div>
+
+					<div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label >Place of lost</label>
+                                <input type="text" name="place" class="form-control" id="place" placeholder="Place where the item is lost">
+                            </div>
+                        </div>
+                    </div>
+					<div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Date of lost</label>
+                                <input type="datetime" name="date" class="form-control" id="date" placeholder="Date on which the item was lost">
+                            </div>
+                        </div>
+                    </div>
+					<div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label >Time of lost</label>
+                                <input type="time" name="time" class="form-control" id="time" placeholder="Time of lost(if known)">
+                            </div>
+                        </div>
+                    </div>
+					<div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label >Location </label>
+                                <input type="text" name="location" class="form-control" id="location" placeholder="Nearby landmark where the item was lost">
+                            </div>
+                        </div>
+                    </div><hr>
+					<div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label >Last seen </label>
+                                <input type="text" name="last seen" class="form-control" id="lastseen" placeholder="When was the item last seen">
+                            </div>
+                        </div>
+                    </div><hr>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label >Description</label>
+                                <input type="text" name="description" class="form-control" id="description" placeholder="Description of item that is lost in detail">
+                            </div>
+                        </div>
+                    </div>
+					<div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label >Any other details</label>
+                                <input type="text" name="details" class="form-control" id="details" placeholder="any other details">
+                            </div>
+                        </div>
+                    </div>
+                        <!-- Need to add a unique Lost Report ID -->
                         <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label>Discription</label>
-                                    <textarea class="form-control" name="comp_discription" rows="4"></textarea>
-                                </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <br><button type="submit" name="submit" class="btn tf-btn btn-default">Submit</button>
                             </div>
                         </div>
-                        <!-- Need to add a unique FIR ID -->
+                    </div>
 
-                        <div class="row center" >
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <br><button type="submit" name="submit" class="btn tf-btn btn-default">Submit</button>
-                                </div>
-                            </div>
-                        </div>
-
-                    </form>
+                </form>
                 </div>
             </div>
         </div>
@@ -294,12 +349,12 @@ else
 </div>
 <!-- Status PAGE
 ==========================================-->
-<div id="tf-s-fir">
+<div id="tf-s-lost">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="section-title center text-center">
-                    <h1 style="color: #FCAC45">FIR Proforma Status</h1>
+                    <h1 style="color: #FCAC45">Lost item Status</h1>
                     <div class="line" >
                         <hr>
                     </div>
@@ -308,20 +363,20 @@ else
                     <small><em>We welcome genuine details</em></small>
                 </div>
                 <div id="forma" style="color: black">
-                    <form action="php/pdf.php" method="POST" enctype="multipart/form-data">
+                    <form action="php/Lost.php" method="POST" enctype="multipart/form-data">
                         <h3>Enter Email </h3><br>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" name="email" class="form-control" id="name" placeholder="Enter FIR NO">
+                                    <input type="text" name="P_email" class="form-control" id="name" placeholder="Enter Email">
                                 </div>
                             </div>
                         </div>
-                        <h3>Enter Fir No</h3><br>
+                        <h3>Enter Lost Report No</h3><br>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" name="no" class="form-control" id="name" placeholder="Enter FIR NO">
+                                    <input type="text" name="P_no" class="form-control" id="name" placeholder="Enter Lost Report NO">
                                 </div>
                             </div>
                         </div>
@@ -347,6 +402,8 @@ else
 </div>
 
 
+
+
 <!-- FAQ PAGE
 ==========================================-->
 <div id="tf-faq">
@@ -365,27 +422,27 @@ else
                 <table>
                     <tr>
                         <td><table border="0" cellspacing="0" cellpadding="0">
-                                <tr>
-                                    <td width="110" valign="top"><p><strong>Question 01</strong></p></td>
-                                    <td width="20" valign="top"><p><strong>:</strong></p></td>
-                                    <td valign="top"><p><strong>Why this application has been developed?</strong></p></td>
-                                </tr>
-                                <tr>
-                                    <td valign="top"><p><strong>Answer </strong></p></td>
-                                    <td valign="top"><p><strong>: </strong></p></td>
-                                    <td valign="top"><p>World  has consistently been adopting new methodologies and technologies to enhance  ts service delivery capacity.
-                                            Our endeavour has been to identify areas where   newer means can help in reducing public inconvenience.<br /><br />
-                                            <tr>
-                                                <td valign="top"><p><strong>Question 02</strong></p></td>
-                                    <td valign="top"><p><strong>:</strong></p></td>
-                                    <td valign="top"><p><strong>What is the procedure for lodging a report?</strong></p></td>
-                                </tr>
-                                <tr>
-                                    <td valign="top"><p><strong>Answer </strong></p></td>
-                                    <td valign="top"><p><strong>:</strong></p></td>
-                                    <td valign="top"><p>Visit Delhi Police   website www.econvoy.com and follow the &lsquo;FIR REPORT&rsquo; Module. </p></td>
-                                </tr>
-                            </table>
+                            <tr>
+                                <td width="110" valign="top"><p><strong>Question 01</strong></p></td>
+                                <td width="20" valign="top"><p><strong>:</strong></p></td>
+                                <td valign="top"><p><strong>Why this application has been developed?</strong></p></td>
+                            </tr>
+                            <tr>
+                                <td valign="top"><p><strong>Answer </strong></p></td>
+                                <td valign="top"><p><strong>: </strong></p></td>
+                                <td valign="top"><p>World  has consistently been adopting new methodologies and technologies to enhance  ts service delivery capacity.
+                                    Our endeavour has been to identify areas where   newer means can help in reducing public inconvenience.<br /><br />
+                                    <tr>
+                                        <td valign="top"><p><strong>Question 02</strong></p></td>
+                                <td valign="top"><p><strong>:</strong></p></td>
+                                <td valign="top"><p><strong>What is the procedure for lodging a report?</strong></p></td>
+                            </tr>
+                            <tr>
+                                <td valign="top"><p><strong>Answer </strong></p></td>
+                                <td valign="top"><p><strong>:</strong></p></td>
+                                <td valign="top"><p>Visit   website www.econvoy.com and follow the &lsquo;Lost REPORT&rsquo; Module. </p></td>
+                            </tr>
+                        </table>
                             <br clear="all" />
                             <table border="0" cellspacing="0" cellpadding="0">
                                 <tr>
@@ -396,17 +453,17 @@ else
                                 <tr>
                                     <td valign="top"><p><strong>Answer</strong></p></td>
                                     <td valign="top"><p><strong>:</strong></p></td>
-                                    <td valign="top"><p>A digitally signed &lsquo;FIR   REPORT&rsquo; will be instantaneously sent back on the complainant&rsquo; e-mail address.</p></td>
+                                    <td valign="top"><p>A digitally signed &lsquo;Lost   REPORT&rsquo; will be instantaneously sent back on the complainant&rsquo; e-mail address.</p></td>
                                 </tr>
                                 <tr>
                                     <td valign="top"><p><strong>Question 04</strong></p></td>
                                     <td valign="top"><p><strong>:</strong></p></td>
-                                    <td valign="top"><p><strong>What is the significance of FIR No?</strong></p></td>
+                                    <td valign="top"><p><strong>What is the significance of Lost No?</strong></p></td>
                                 </tr>
                                 <tr>
                                     <td valign="top"><p><strong>Answer</strong></p></td>
                                     <td valign="top"><p><strong>:</strong></p></td>
-                                    <td valign="top"><p>The &lsquo;FIR Onine REPORT&rsquo; bears a    unique FIR Report number (LR No) about the information lodged. This FIR  Number can be used for future search and retrieval of a copy of the report.</p></td>
+                                    <td valign="top"><p>The &lsquo;Lost Onine REPORT&rsquo; bears a    unique Lost Report number (LR No) about the information lodged. This Lost  Number can be used for future search and retrieval of a copy of the report.</p></td>
                                 </tr>
                                 <tr>
                                     <td valign="top"><p><strong>Question 05</strong></p></td>
@@ -416,7 +473,7 @@ else
                                 <tr>
                                     <td valign="top"><p><strong>Answer </strong></p></td>
                                     <td valign="top"><p><strong>:</strong></p></td>
-                                    <td valign="top"><p>This service can be used    to lodge a &lsquo;FIR REPORT&rsquo; for any Cognizable Offence.<strong></strong></p></td>
+                                    <td valign="top"><p>This service can be used    to lodge a &lsquo;Lost REPORT&rsquo; for any Item lost.<strong></strong></p></td>
                                 </tr>
                                 <tr>
                                     <td valign="top"><p><strong>Question 06</strong></p></td>
@@ -441,30 +498,30 @@ else
                                 <tr>
                                     <td valign="top"><p><strong>Question 07</strong></p></td>
                                     <td valign="top"><p><strong>:</strong></p></td>
-                                    <td valign="top"><p><strong>I have not received an e-mail confirmation even though I   have submitted my report.</strong></p></td>
+                                    <td valign="top"><p><strong>I have not received an e-mail conLostmation even though I   have submitted my report.</strong></p></td>
                                 </tr>
                                 <tr>
                                     <td valign="top"><p><strong>Answer </strong></p></td>
                                     <td valign="top"><p><strong>:</strong></p></td>
                                     <td valign="top"><ul>
-                                            <li>You may have accidentally provided a wrong e-mail    address or your e-mail inbox is full. </li>
-                                            <li>You may also contact admin admin@econvoy.com to check your report.</li>
-                                        </ul></td>
+                                        <li>You may have accidentally provided a wrong e-mail    address or your e-mail inbox is full. </li>
+                                        <li>You may also contact admin admin@econvoy.com to check your report.</li>
+                                    </ul></td>
                                 </tr>
                                 <tr>
                                     <td valign="top"><p><strong>Question 08</strong></p></td>
                                     <td valign="top"><p><strong>:</strong></p></td>
-                                    <td valign="top"><p><strong>How a &lsquo;FIR REPORT&rsquo; can be verified?</strong></p></td>
+                                    <td valign="top"><p><strong>How a &lsquo;Lost REPORT&rsquo; can be verified?</strong></p></td>
                                 </tr>
                                 <tr>
                                     <td valign="top"><p><strong>Answer </strong></p></td>
                                     <td valign="top"><p><strong>:</strong></p></td>
-                                    <td valign="top"><p>Any person can verify the    &lsquo;FIR REPORT&rsquo; by filling FIr No. in the status link of the application on the  website .<strong></strong></p></td>
+                                    <td valign="top"><p>Any person can verify the    &lsquo;Lost REPORT&rsquo; by filling Lost No. in the status link of the application on the  website .<strong></strong></p></td>
                                 </tr>
                                 <tr>
                                     <td valign="top"><p><strong>Question 09</strong></p></td>
                                     <td valign="top"><p><strong>:</strong></p></td>
-                                    <td valign="top"><p><strong>I am a foreigner. Can I lodge a &lsquo;FIR REPORT&rsquo; online?</strong></p></td>
+                                    <td valign="top"><p><strong>I am a foreigner. Can I lodge a &lsquo;Lost REPORT&rsquo; online?</strong></p></td>
                                 </tr>
                                 <tr>
                                     <td valign="top"><p><strong>Answer </strong></p></td>
@@ -479,7 +536,7 @@ else
                                 <tr>
                                     <td valign="top"><p><strong>Answer </strong></p></td>
                                     <td valign="top"><p><strong>:</strong></p></td>
-                                    <td valign="top"><p>Yes as it being an FIR report ,there will enquiry and investgation.<strong></strong></p></td>
+                                    <td valign="top"><p>Yes as it being an Lost report ,there will enquiry and investgation.<strong></strong></p></td>
                                 </tr>
                                 <tr>
                                     <td valign="top"><p><strong>Question 11</strong></p></td>
@@ -514,7 +571,7 @@ else
                                 <tr>
                                     <td valign="top"><p><strong>Question 15</strong></p></td>
                                     <td valign="top"><p><strong>:</strong></p></td>
-                                    <td valign="top"><p><strong>Whether &ldquo;FIR REPORT&rdquo; can be retrieved or not?</strong></p></td>
+                                    <td valign="top"><p><strong>Whether &ldquo;Lost REPORT&rdquo; can be retrieved or not?</strong></p></td>
                                 </tr>
                                 <tr>
                                     <td valign="top"><p><strong>Answer</strong></p></td>
@@ -529,6 +586,7 @@ else
         </div>
     </div>
 </div>
+
 <nav id="footer">
     <div class="container">
         <div class="pull-left fnav">
