@@ -781,7 +781,6 @@ footer.page-footer {
     }
 }
 
-
 /* For Tables ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
     /* STYLES GO HERE */
@@ -792,4 +791,3 @@ footer.page-footer {
         font-size: 0.8rem;
     }
 }
-

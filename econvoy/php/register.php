@@ -89,7 +89,8 @@ if (isset($_POST['register'])) {
             $_SESSION['name'] = $name;
             $_SESSION['mail'] = $email;
             $_SESSION['type'] = $type;
-            header('Location:http://localhost:90/econvoy/userdashboard.php');
+            $_SESSION['name'] = "registred";
+            header('Location:http://localhost:90/econvoy/');
         }
     }
 }

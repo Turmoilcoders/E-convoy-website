@@ -2,13 +2,9 @@
 session_start();
 if(isset($_SESSION['name']))
 {
-    if($_SESSION['name'] == "error")
-    {
-        echo "<script>alert('invalid combinations')</script> ";
-    }
     if($_SESSION['name'] == "existed")
     {
-        echo "<script>alert('User alearedy exists')</script> ";
+        echo "<script>alert('User all ready exists')</script> ";
     }
     if($_SESSION['name'] == "logout")
     {
@@ -18,7 +14,15 @@ if(isset($_SESSION['name']))
     {
         echo "<script>alert('New User register yourself')</script> ";
     }
-    $_SESSION['name'] = "";
+    if($_SESSION['name'] == "registred")
+    {
+        echo "<script>alert('Welcome user ,you have successfully registered. Login after some time as it take as while for system approval.')</script> ";
+    }
+    if($_SESSION['name'] == "error")
+    {
+        echo "<script>alert('Invalid combinations or application under scrutiny')</script> ";
+    }
+    $_SESSION['name']="";
 }
 else
 {

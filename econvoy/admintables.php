@@ -56,7 +56,6 @@ else
     <!-- CORE CSS-->
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
-    <link href="https://cdn.datatables.net/1.10.9/css/jquery.dataTables.min.css" type="text/css" rel="stylesheet" media="screen,projection">
 
 </head>
 
@@ -120,16 +119,42 @@ else
     <section id="content">
         <!--start container-->
         <div class="container">
-            <div class="col s12 m8 l9">
-                <table id="employee-grid"  cellpadding="0" cellspacing="0" border="0" class="display" width="100%">
-                    <thead>
-                    <tr>
-                        <th>Employee name</th>
-                        <th>Salary</th>
-                        <th>Age</th>
-                    </tr>
-                    </thead>
-                </table>
+            <div class="row">
+                <?php
+                $conn= new mysqli('localhost','root','','econvoy');
+                $sql = "SELECT * FROM users WHERE `Status` ='No' ";
+                $result = mysqli_query($conn,$sql);
+                ?>
+                <div class="col s12 m8 l9">
+                    <table id="data-table-simple" class="responsive-table display"   width="100%">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>User</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        <?php
+                            while($row = mysqli_fetch_array($result)) {
+
+                                ?>
+                                <tr>
+                                    <td><?=$row['name']?></td>
+                                    <td><?=$row['email']?></td>
+                                    <td><?=$row['type']?></td>
+                                    <td><?=$row['Status']?></td>
+                                    <td><a href="php/updatetable.php" ><?php  $_SESSION['email']=$row['email']; echo "No"; ?></a></td>
+                                </tr>
+                        <?php
+                        }
+                        mysqli_close($conn);
+                        ?>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
         <!--end container-->
@@ -153,14 +178,13 @@ else
 <!-- ================================================
 Scripts
 ================================================ -->
+
 <!-- jQuery Library -->
 <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
 <!--materialize js-->
 <script type="text/javascript" src="js/materialize.js"></script>
 <!--Extra-->
 <script type="text/javascript" src="js/plugin.js"></script>
-<!-- Data Tables -->
-<script  type="javascript" src="https://cdn.datatables.net/1.10.9/js/jquery.dataTables.min.js"></script>
 
 </body>
 </html>

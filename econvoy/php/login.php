@@ -76,7 +76,7 @@ if(isset($_POST['login']))
         $encrypted_password = $result['encrypt_paswd'];
         $hash = base64_encode(sha1($password . $salt, true) . $salt);
         // check for password equality
-        if ( $encrypted_password == $hash ) {
+        if ( $encrypted_password == $hash && $result['Status'] == "yes" ) {
           // user authentication details are correct
           session_start();
           $_SESSION['name'] = $result['name'];

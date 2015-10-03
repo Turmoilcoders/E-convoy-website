@@ -24,7 +24,87 @@
     <favorites_list name="material admin" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="admintables.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admintables.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.884615" vertical-offset="2233" max-vertical-offset="3315">
+              <caret line="148" column="94" selection-start-line="148" selection-start-column="94" selection-end-line="148" selection-end-column="94" />
+              <folding>
+                <element signature="e#6#89#0#PHP" expanded="true" />
+                <marker date="1443903172036" expanded="true" signature="4225:4265" placeholder="SELECT * FRO..users..." />
+                <marker date="1443903172036" expanded="true" signature="4225:4266" placeholder="SELECT * FRO..users..." />
+                <marker date="1443903172036" expanded="true" signature="4225:4266" placeholder="SELECT * FRO..users..." />
+                <marker date="1443903172036" expanded="true" signature="4513:4848" placeholder="..." />
+                <marker date="1443903172036" expanded="true" signature="4546:4815" placeholder="..." />
+                <marker date="1443903172036" expanded="true" signature="4880:5100" placeholder="..." />
+                <marker date="1443903172036" expanded="true" signature="5055:5100" placeholder="..." />
+                <marker date="1443903172036" expanded="true" signature="6278:6385" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/login.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.9615384" vertical-offset="1275" max-vertical-offset="1819">
+              <caret line="78" column="36" selection-start-line="78" selection-start-column="36" selection-end-line="78" selection-end-column="36" />
+              <folding>
+                <element signature="e#6#89#0#PHP" expanded="true" />
+                <marker date="1443903509245" expanded="true" signature="1816:1858" placeholder="SELECT * FRO..users..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="registration.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/registration.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.1153846" vertical-offset="1371" max-vertical-offset="2329">
+              <caret line="90" column="76" selection-start-line="90" selection-start-column="76" selection-end-line="90" selection-end-column="76" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/register.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.538462" vertical-offset="1179" max-vertical-offset="1649">
+              <caret line="92" column="57" selection-start-line="92" selection-start-column="57" selection-end-line="92" selection-end-column="57" />
+              <folding>
+                <marker date="1443905382384" expanded="true" signature="777:823" placeholder="SELECT email..users..." />
+                <marker date="1443905382384" expanded="true" signature="1294:1336" placeholder="SELECT * FRO..users..." />
+                <marker date="1443905382384" expanded="true" signature="1395:1441" placeholder="SELECT email..users..." />
+                <marker date="1443905382384" expanded="true" signature="2189:2369" placeholder="INSERT INTO ..." />
+                <marker date="1443905382384" expanded="true" signature="2597:2635" placeholder="SELECT * FRO..users..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="logout.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/logout.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="340">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="11" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.7039801" vertical-offset="23" max-vertical-offset="2074">
+              <caret line="18" column="139" selection-start-line="18" selection-start-column="139" selection-end-line="18" selection-end-column="139" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -35,36 +115,37 @@
         <option value="$PROJECT_DIR$/sass/components/_icons_material-design.scss" />
         <option value="$PROJECT_DIR$/tp.html" />
         <option value="$PROJECT_DIR$/js/plugin.js" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/login.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/regestration.html" />
         <option value="$PROJECT_DIR$/forgot.php" />
         <option value="$PROJECT_DIR$/php/db_const.php" />
-        <option value="$PROJECT_DIR$/php/logout.php" />
-        <option value="$PROJECT_DIR$/php/register.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/dashboard.php" />
-        <option value="$PROJECT_DIR$/php/login.php" />
         <option value="$PROJECT_DIR$/registration.php" />
         <option value="$PROJECT_DIR$/lawyerhiring.php" />
         <option value="$PROJECT_DIR$/userdashboard.php" />
         <option value="$PROJECT_DIR$/fir.php" />
-        <option value="$PROJECT_DIR$/../econvoy/lawyerhiring.php" />
-        <option value="$PROJECT_DIR$/../econvoy/fir.php" />
-        <option value="$PROJECT_DIR$/../econvoy/lost and found page.php" />
-        <option value="$PROJECT_DIR$/../econvoy/missing children.php" />
-        <option value="$PROJECT_DIR$/../econvoy/stolen vechicle search.php" />
-        <option value="$PROJECT_DIR$/../econvoy/userdashboard.php" />
-        <option value="$PROJECT_DIR$/../econvoy/unclaimed vechicle search.php" />
-        <option value="$PROJECT_DIR$/../econvoy/dashboard.php" />
-        <option value="$PROJECT_DIR$/../econvoy/js/main.js" />
-        <option value="$PROJECT_DIR$/../econvoy/js/plugin.js" />
-        <option value="$PROJECT_DIR$/../econvoy/js/datatables.js" />
-        <option value="$PROJECT_DIR$/../econvoy/css/datatables.css" />
-        <option value="$PROJECT_DIR$/../econvoy/php/register.php" />
-        <option value="$PROJECT_DIR$/../econvoy/employee-grid-data.php" />
-        <option value="$PROJECT_DIR$/../econvoy/admintables.php" />
+        <option value="$PROJECT_DIR$/lawyerhiring.php" />
+        <option value="$PROJECT_DIR$/fir.php" />
+        <option value="$PROJECT_DIR$/lost and found page.php" />
+        <option value="$PROJECT_DIR$/missing children.php" />
+        <option value="$PROJECT_DIR$/stolen vechicle search.php" />
+        <option value="$PROJECT_DIR$/userdashboard.php" />
+        <option value="$PROJECT_DIR$/unclaimed vechicle search.php" />
+        <option value="$PROJECT_DIR$/dashboard.php" />
+        <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/js/plugin.js" />
+        <option value="$PROJECT_DIR$/js/datatables.js" />
+        <option value="$PROJECT_DIR$/css/datatables.css" />
+        <option value="$PROJECT_DIR$/employee-grid-data.php" />
+        <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/admintables.php" />
+        <option value="$PROJECT_DIR$/php/updatetable.php" />
+        <option value="$PROJECT_DIR$/php/login.php" />
+        <option value="$PROJECT_DIR$/php/logout.php" />
+        <option value="$PROJECT_DIR$/php/register.php" />
+        <option value="$PROJECT_DIR$/php/register.php" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -130,20 +211,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="php" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="material admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="econvoy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -239,27 +306,27 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="2" width="1098" height="578" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32848233" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25508317" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25508317" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32848233" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39915073" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -306,7 +373,36 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../econvoy/index.php">
+    <entry file="file://$PROJECT_DIR$/admintables.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2907">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#89#0#PHP" expanded="true" />
+            <marker date="1443903172036" expanded="true" signature="4225:4265" placeholder="SELECT * FRO..users..." />
+            <marker date="1443903172036" expanded="true" signature="4225:4266" placeholder="SELECT * FRO..users..." />
+            <marker date="1443903172036" expanded="true" signature="4225:4266" placeholder="SELECT * FRO..users..." />
+            <marker date="1443903172036" expanded="true" signature="4513:4848" placeholder="..." />
+            <marker date="1443903172036" expanded="true" signature="4546:4815" placeholder="..." />
+            <marker date="1443903172036" expanded="true" signature="4880:5100" placeholder="..." />
+            <marker date="1443903172036" expanded="true" signature="5055:5100" placeholder="..." />
+            <marker date="1443903172036" expanded="true" signature="6278:6385" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="986" max-vertical-offset="1819">
+          <caret line="71" column="41" selection-start-line="70" selection-start-column="6" selection-end-line="71" selection-end-column="41" />
+          <folding>
+            <element signature="e#6#89#0#PHP" expanded="true" />
+            <marker date="1443903509245" expanded="true" signature="1816:1858" placeholder="SELECT * FRO..users..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1530">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -314,18 +410,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../econvoy/php/login.php">
+    <entry file="file://$PROJECT_DIR$/php/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="901">
           <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
           <folding>
             <element signature="e#6#89#0#PHP" expanded="true" />
-            <marker date="1443823945498" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..users..." />
+            <marker date="1443903509245" expanded="true" signature="1816:1858" placeholder="SELECT * FRO..users..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../econvoy/index.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1462">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -333,7 +429,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../econvoy/dashboard.php">
+    <entry file="file://$PROJECT_DIR$/dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3060">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -341,7 +437,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../econvoy/dashboard.php">
+    <entry file="file://$PROJECT_DIR$/dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1377" max-vertical-offset="2618">
           <caret line="82" column="34" selection-start-line="82" selection-start-column="34" selection-end-line="82" selection-end-column="34" />
@@ -349,7 +445,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../econvoy/index.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1547">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -357,18 +453,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../econvoy/php/login.php">
+    <entry file="file://$PROJECT_DIR$/php/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="289">
           <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
           <folding>
             <element signature="e#6#89#0#PHP" expanded="true" />
-            <marker date="1443823945498" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..users..." />
+            <marker date="1443903509245" expanded="true" signature="1816:1858" placeholder="SELECT * FRO..users..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../econvoy/dashboard.php">
+    <entry file="file://$PROJECT_DIR$/dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1377" max-vertical-offset="2618">
           <caret line="82" column="34" selection-start-line="82" selection-start-column="34" selection-end-line="82" selection-end-column="34" />
@@ -376,7 +472,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../econvoy/index.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1564">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -384,18 +480,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../econvoy/php/login.php">
+    <entry file="file://$PROJECT_DIR$/php/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="272">
           <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
           <folding>
             <element signature="e#6#89#0#PHP" expanded="true" />
-            <marker date="1443823945498" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..users..." />
+            <marker date="1443903509245" expanded="true" signature="1816:1858" placeholder="SELECT * FRO..users..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../econvoy/index.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="397" max-vertical-offset="1547">
           <caret line="36" column="55" selection-start-line="36" selection-start-column="55" selection-end-line="36" selection-end-column="55" />
@@ -403,14 +499,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../econvoy/js/plugin.js">
+    <entry file="file://$PROJECT_DIR$/js/plugin.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="459">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../econvoy/css/style.css">
+    <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="4111" max-vertical-offset="13617">
           <caret line="252" column="39" selection-start-line="252" selection-start-column="39" selection-end-line="252" selection-end-column="39" />
@@ -418,7 +514,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../econvoy/index.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="397" max-vertical-offset="1547">
           <caret line="36" column="55" selection-start-line="36" selection-start-column="55" selection-end-line="36" selection-end-column="55" />
@@ -426,14 +522,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../econvoy/js/plugin.js">
+    <entry file="file://$PROJECT_DIR$/js/plugin.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="459">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../econvoy/css/style.css">
+    <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="13617">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -441,7 +537,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../econvoy/css/materialize.css">
+    <entry file="file://$PROJECT_DIR$/css/materialize.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.1923075" vertical-offset="35632" max-vertical-offset="132277">
           <caret line="2107" column="0" selection-start-line="2107" selection-start-column="0" selection-end-line="2107" selection-end-column="0" />
@@ -449,57 +545,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../econvoy/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8454546" vertical-offset="12446" max-vertical-offset="13617">
-          <caret line="754" column="34" selection-start-line="754" selection-start-column="17" selection-end-line="754" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../econvoy/php/db_const.php">
+    <entry file="file://$PROJECT_DIR$/php/db_const.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="204">
           <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../econvoy/forgot.php">
+    <entry file="file://$PROJECT_DIR$/forgot.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2004831" vertical-offset="1090" max-vertical-offset="1530">
           <caret line="69" column="10" selection-start-line="69" selection-start-column="10" selection-end-line="69" selection-end-column="10" />
-          <folding>
-            <element signature="e#6#90#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../econvoy/php/logout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31850117" vertical-offset="0" max-vertical-offset="427">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../econvoy/registration.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38405797" vertical-offset="1371" max-vertical-offset="2329">
-          <caret line="90" column="76" selection-start-line="90" selection-start-column="76" selection-end-line="90" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../econvoy/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.76112413" vertical-offset="899" max-vertical-offset="2006">
-          <caret line="72" column="96" selection-start-line="72" selection-start-column="85" selection-end-line="72" selection-end-column="96" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../econvoy/lawyerhiring.php">
+    <entry file="file://$PROJECT_DIR$/lawyerhiring.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-12.846154" vertical-offset="1060" max-vertical-offset="5355">
           <caret line="82" column="59" selection-start-line="82" selection-start-column="59" selection-end-line="82" selection-end-column="59" />
@@ -507,60 +567,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../econvoy/fir.php">
+    <entry file="file://$PROJECT_DIR$/fir.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.042288557" vertical-offset="0" max-vertical-offset="9656">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="29" selection-end-column="1" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../econvoy/lost and found page.php">
+    <entry file="file://$PROJECT_DIR$/lost and found page.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.36567163" vertical-offset="1179" max-vertical-offset="10642">
           <caret line="78" column="2" selection-start-line="78" selection-start-column="2" selection-end-line="78" selection-end-column="2" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../econvoy/missing.php">
+    <entry file="file://$PROJECT_DIR$/missing.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.042288557" vertical-offset="714" max-vertical-offset="6766">
           <caret line="43" column="53" selection-start-line="43" selection-start-column="53" selection-end-line="43" selection-end-column="53" />
-          <folding>
-            <marker date="1443875837264" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1443875837264" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1443875837264" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1443875837264" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1443875837264" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1443875837264" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1443875837264" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1443875837264" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1443875837264" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1443875837264" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1443875837264" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1443875837264" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1443875837264" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1443875837264" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1443875837264" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1443875837264" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1443875837264" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../econvoy/stolen vechicle search.php">
+    <entry file="file://$PROJECT_DIR$/stolen vechicle search.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.91542286" vertical-offset="448" max-vertical-offset="4301">
           <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
@@ -568,7 +599,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../econvoy/unclaimed vechicle search.php">
+    <entry file="file://$PROJECT_DIR$/unclaimed vechicle search.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.38059703" vertical-offset="697" max-vertical-offset="4369">
           <caret line="50" column="53" selection-start-line="50" selection-start-column="53" selection-end-line="50" selection-end-column="53" />
@@ -576,120 +607,140 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../econvoy/userdashboard.php">
+    <entry file="file://$PROJECT_DIR$/userdashboard.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.91542286" vertical-offset="3525" max-vertical-offset="6766">
           <caret line="229" column="32" selection-start-line="229" selection-start-column="32" selection-end-line="229" selection-end-column="32" />
-          <folding>
-            <marker date="1443876883959" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1443876883959" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1443876883959" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1443876883959" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1443876883959" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1443876883959" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1443876883959" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1443876883959" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1443876883959" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1443876883959" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1443876883959" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1443876883959" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1443876883959" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1443876883959" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1443876883959" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1443876883959" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1443876883959" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1443876883959" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1443876883959" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1443876883959" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1443876883959" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1443876883959" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../econvoy/js/materialize.js">
+    <entry file="file://$PROJECT_DIR$/js/materialize.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="72.88551" vertical-offset="0" max-vertical-offset="90593">
           <caret line="1839" column="0" selection-start-line="1839" selection-start-column="0" selection-end-line="1839" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../econvoy/js/materialize.min.js">
+    <entry file="file://$PROJECT_DIR$/js/materialize.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="428">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../econvoy/js/SmoothScroll.js">
+    <entry file="file://$PROJECT_DIR$/js/SmoothScroll.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8976">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../econvoy/js/main.js">
+    <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.9205608" vertical-offset="1629" max-vertical-offset="2176">
           <caret line="119" column="0" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../econvoy/js/plugin.js">
+    <entry file="file://$PROJECT_DIR$/js/plugin.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7616823" vertical-offset="14" max-vertical-offset="459">
           <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9205608" vertical-offset="13070" max-vertical-offset="13566">
+          <caret line="792" column="1" selection-start-line="792" selection-start-column="1" selection-end-line="792" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../econvoy/php/register.php">
+    <entry file="file://$PROJECT_DIR$/php/updatetable.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.884615" vertical-offset="975" max-vertical-offset="1632">
-          <caret line="79" column="200" selection-start-line="79" selection-start-column="200" selection-end-line="79" selection-end-column="200" />
+        <state vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="731">
+          <caret line="12" column="57" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
           <folding>
-            <marker date="1443880223292" expanded="true" signature="-1:-1" placeholder="SELECT email..users..." />
-            <marker date="1443880223292" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..users..." />
-            <marker date="1443880223292" expanded="true" signature="-1:-1" placeholder="SELECT email..users..." />
-            <marker date="1443880223292" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1443880223292" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..users..." />
+            <marker date="1443903335084" expanded="true" signature="-1:-1" placeholder="UPDATE users..." />
+            <marker date="1443903335084" expanded="true" signature="-1:-1" placeholder="UPDATE users..." />
+            <marker date="1443903335084" expanded="true" signature="-1:-1" placeholder="UPDATE users..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../econvoy/php/login.php">
+    <entry file="file://$PROJECT_DIR$/dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.1923075" vertical-offset="986" max-vertical-offset="1819">
-          <caret line="69" column="57" selection-start-line="69" selection-start-column="17" selection-end-line="69" selection-end-column="57" />
+        <state vertical-scroll-proportion="0.5771144" vertical-offset="227" max-vertical-offset="3264">
+          <caret line="27" column="55" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/registration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.1153846" vertical-offset="1371" max-vertical-offset="2329">
+          <caret line="90" column="76" selection-start-line="90" selection-start-column="76" selection-end-line="90" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/logout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="340">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="11" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.538462" vertical-offset="1179" max-vertical-offset="1649">
+          <caret line="92" column="57" selection-start-line="92" selection-start-column="57" selection-end-line="92" selection-end-column="57" />
+          <folding>
+            <marker date="1443905382384" expanded="true" signature="777:823" placeholder="SELECT email..users..." />
+            <marker date="1443905382384" expanded="true" signature="1294:1336" placeholder="SELECT * FRO..users..." />
+            <marker date="1443905382384" expanded="true" signature="1395:1441" placeholder="SELECT email..users..." />
+            <marker date="1443905382384" expanded="true" signature="2189:2369" placeholder="INSERT INTO ..." />
+            <marker date="1443905382384" expanded="true" signature="2597:2635" placeholder="SELECT * FRO..users..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admintables.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.884615" vertical-offset="2233" max-vertical-offset="3315">
+          <caret line="148" column="94" selection-start-line="148" selection-start-column="94" selection-end-line="148" selection-end-column="94" />
           <folding>
             <element signature="e#6#89#0#PHP" expanded="true" />
-            <marker date="1443823945498" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..users..." />
+            <marker date="1443903172036" expanded="true" signature="4225:4265" placeholder="SELECT * FRO..users..." />
+            <marker date="1443903172036" expanded="true" signature="4225:4266" placeholder="SELECT * FRO..users..." />
+            <marker date="1443903172036" expanded="true" signature="4225:4266" placeholder="SELECT * FRO..users..." />
+            <marker date="1443903172036" expanded="true" signature="4513:4848" placeholder="..." />
+            <marker date="1443903172036" expanded="true" signature="4546:4815" placeholder="..." />
+            <marker date="1443903172036" expanded="true" signature="4880:5100" placeholder="..." />
+            <marker date="1443903172036" expanded="true" signature="5055:5100" placeholder="..." />
+            <marker date="1443903172036" expanded="true" signature="6278:6385" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../econvoy/admintables.php">
+    <entry file="file://$PROJECT_DIR$/php/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.042288557" vertical-offset="1870" max-vertical-offset="2907">
-          <caret line="111" column="18" selection-start-line="111" selection-start-column="18" selection-end-line="111" selection-end-column="18" />
+        <state vertical-scroll-proportion="-1.9615384" vertical-offset="1275" max-vertical-offset="1819">
+          <caret line="78" column="36" selection-start-line="78" selection-start-column="36" selection-end-line="78" selection-end-column="36" />
           <folding>
             <element signature="e#6#89#0#PHP" expanded="true" />
+            <marker date="1443903509245" expanded="true" signature="1816:1858" placeholder="SELECT * FRO..users..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../econvoy/dashboard.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.619403" vertical-offset="1332" max-vertical-offset="3264">
-          <caret line="93" column="60" selection-start-line="93" selection-start-column="60" selection-end-line="93" selection-end-column="60" />
+        <state vertical-scroll-proportion="0.7039801" vertical-offset="23" max-vertical-offset="2074">
+          <caret line="18" column="139" selection-start-line="18" selection-start-column="139" selection-end-line="18" selection-end-column="139" />
           <folding />
         </state>
       </provider>
