@@ -22,6 +22,11 @@ if(isset($_SESSION['name']))
         $name = "unnit";
         $temp = 'img/unnit.jpg';
     }
+    elseif ($_SESSION['name'] == "police")
+    {
+        $name = "police";
+        $temp = 'img/unnit.jpg';
+    }
     else
     {
         $_SESSION['name'] = "logout";
@@ -71,7 +76,7 @@ else
     <!-- Start SIDE NAVBAR -->
     <!-- //////////////////////////////////////////////////////////////////////////// -->
     <div id="left-sidebar-nav">
-        <ul id="slide-out" class="side-nav fixed leftside-navigation">
+        <ul id="slide-out" class="side-nav fixed leftside-navigation collapsible collapsible-accordion">
             <li class="user-details">
                 <div class="row">
                     <div class="col col s4 m4 l4">
@@ -82,20 +87,37 @@ else
                     </div>
                 </div>
             </li>
+            <li class="no-padding"></li>
             <li class="bold active">
                 <?php
                 echo "<a href='dashboard.php' class='waves-effect waves-cyan'><i class='mdi-action-dashboard'></i> Dashboard</a>";
                 ?>
             </li>
-            </li>
+            <li class="no-padding"></li>
             <li class="bold active"><a href="dashboard.php" class="waves-effect waves-cyan"><i class="mdi-action-account-circle"></i> Team</a>
             </li>
-            </li>
-            <li class="bold active"><a href="admintables.php" class="waves-effect waves-cyan"><i class="mdi-editor-border-all"></i> Tables</a>
-            </li>
             <li class="no-padding">
-                <ul class="collapsible collapsible-accordion">
-                </ul>
+                    <li class="bold"><a class="collapsible-header  waves-effect waves-cyan"><i class="mdi-editor-border-all"></i> Tables</a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="New_users_admin.php">Registration</a>
+                                </li>
+                                <li><a href="Accepted_users_admin.php">Accepted users</a>
+                                </li>
+                                <li><a href="Rejected_users_admin.php">Rejected users</a>
+                                </li>
+                                <li><a href="New_firs_admin.php">New Fir</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <script>
+                        $(document).ready(function(){
+                            $('.collapsible-header').collapsible({
+                                accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+                            });
+                        });
+                    </script>
             </li>
             <li class="li-hover"><div class="divider"></div></li>
              <li><a href="php/logout.php"><i class='mdi-content-send'></i>Logout</a>

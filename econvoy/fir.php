@@ -6,21 +6,17 @@
  * Time: 3:33 AM
  */
 session_start();
+$name = $_SESSION['name'];
 if(isset($_SESSION['name']))
 {
-    if($_SESSION['name'] == "")
+    if( $_SESSION['error'] == "error")
     {
-        $_SESSION['name'] = "logout";
-        header('Location:http://localhost:90/econvoy/');
+        $_SESSION['error'] ="";
+        echo "<script> alert('Invalid combinations ')</script> ";
     }
     elseif($_SESSION['name'])
     {
 
-    }
-    else
-    {
-        $_SESSION['name'] = "logout";
-        header('Location:http://localhost:90/econvoy/');
     }
 }
 else
@@ -28,6 +24,10 @@ else
     $_SESSION['name'] = "logout";
     header('Location:http://localhost:90/econvoy/');
 }
+
+
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -36,7 +36,7 @@ else
     ================================================== -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>LawHub : A small contribution to Indin Government</title>
+    <title>E-convoy : A small contribution to Indin Government</title>
     <meta name="description" content="This is a tool based on crime and law">
     <meta name="keywords" content="indian law system,laws,law students,crime,crime analysis, crime statistics, fir, fir registration">
 
@@ -123,13 +123,13 @@ else
                     <small><em>We welcome genuine details</em></small>
                 </div>
                 <div id="forma" style="color: black">
-                    <form action="./php/fir.php" method="POST" enctype="multipart/form-data">
+                    <form action="./php/firsubmit.php" method="POST" enctype="multipart/form-data">
                         <h3>Personel Details</h3><br>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Name:</label>
-                                    <input type="text" name="P_name" class="form-control" id="name" placeholder="Enter your name">
+                                    <input type="text" name="P_name" class="form-control" id="name" placeholder="Enter your name" required="">
                                 </div>
                             </div>
                         </div>
@@ -137,7 +137,7 @@ else
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Father's/Husband Name</label>
-                                    <input type="text" name="F_name" class="form-control" id="F_Name" placeholder="Entername">
+                                    <input type="text" name="F_name" class="form-control" id="F_Name" placeholder="Entername" required="">
                                 </div>
                             </div>
                         </div>
@@ -145,7 +145,7 @@ else
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Your Phone Number</label>
-                                    <input type="text" name="phone_number" class="form-control" id="phone_number" placeholder="Enter your phone number">
+                                    <input type="text" name="phone_number" class="form-control" id="phone_number" placeholder="Enter your phone number" required="">
                                 </div>
                             </div>
                         </div>
@@ -153,7 +153,7 @@ else
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>E-mail</label>
-                                    <input type="text" name="e-mail" class="form-control" id="e-mail" placeholder="Enter your e-mail id">
+                                    <input type="text" name="e-mail" class="form-control" id="e-mail" placeholder="Enter your e-mail id" required="">
                                 </div>
                             </div>
                         </div>
@@ -161,7 +161,7 @@ else
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Address</label>
-                                    <textarea class="form-control" name="Address" rows="4"></textarea>
+                                    <textarea class="form-control" name="Address" rows="4" required=""></textarea>
                                 </div>
                             </div>
                         </div>
@@ -171,7 +171,7 @@ else
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Landmark</label>
-                                    <input type="text" name="Distance_station" class="form-control" id="Distance_station" placeholder="Give nearby landmark place of incident ">
+                                    <input type="text" name="Distance_station" class="form-control" id="Distance_station" placeholder="Give nearby landmark place of incident" required="">
                                 </div>
                             </div>
                         </div>
@@ -180,7 +180,7 @@ else
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label >Direction </label>
-                                    <input type="text" name="Direction" class="form-control" id="Direction" placeholder="Give direction from a landmark to incident">
+                                    <input type="text" name="Direction" class="form-control" id="Direction" placeholder="Give direction from a landmark to incident" required="">
                                 </div>
                             </div>
                         </div>
@@ -190,7 +190,7 @@ else
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label >Time</label>
-                                    <input type="time" name="Time" class="form-control" id="Time" placeholder="Time at which the crime took place">
+                                    <input type="time" name="Time" class="form-control" id="Time" placeholder="Time at which the crime took place" required="">
                                 </div>
                             </div>
                         </div>
@@ -199,7 +199,7 @@ else
                             <div class="col-md-6 ">
                                 <div class="form-group">
                                     <label >Date</label>
-                                    <input type="date" name="Date" class="form-control" id="Date" placeholder="Date of incident">
+                                    <input type="date" name="Date" class="form-control" id="Date" placeholder="Date of incident" required="">
                                 </div>
                             </div>
                         </div>
@@ -271,11 +271,23 @@ else
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>Discription</label>
-                                    <textarea class="form-control" name="comp_discription" rows="4"></textarea>
+                                    <textarea class="form-control" name="comp_discription" rows="4" required=""></textarea>
                                 </div>
                             </div>
                         </div>
-                        <!-- Need to add a unique FIR ID -->
+                        <?php
+                        $no = uniqid('');
+                        $no ='F'.$no;
+                        $_SESSION['firno']=$no;
+                        ?>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Fir No :&nbsp</label>
+                                    <label><?php print "<strong><p> $no </p></strong>" ;?></label>
+                                </div>
+                            </div>
+                        </div>
 
                         <div class="row center" >
                             <div class="col-md-6">
@@ -308,12 +320,12 @@ else
                     <small><em>We welcome genuine details</em></small>
                 </div>
                 <div id="forma" style="color: black">
-                    <form action="php/pdf.php" method="POST" enctype="multipart/form-data">
+                    <form action="Status_print.php" method="POST" enctype="multipart/form-data">
                         <h3>Enter Email </h3><br>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" name="email" class="form-control" id="name" placeholder="Enter FIR NO">
+                                    <input type="text" name="email" class="form-control" id="name" placeholder="Enter email id" required="">
                                 </div>
                             </div>
                         </div>
@@ -328,12 +340,7 @@ else
                         <div class="row left" >
                             <div class="col-md-3">
                                 <div class="form-group">
-                                    <button type="submit" name="submit" class="btn tf-btn btn-default">Check status</button>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="form-group">
-                                    <button type="submit" name="generate" class="btn tf-btn btn-default">Get report</button>
+                                    <button type="submit" name="submit" class="btn tf-btn btn-default">Get report</button>
                                 </div>
                             </div>
                         </div>

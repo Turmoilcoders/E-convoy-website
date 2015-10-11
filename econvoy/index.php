@@ -5,28 +5,37 @@ if(isset($_SESSION['name']))
     if($_SESSION['name'] == "existed")
     {
         echo "<script>alert('User all ready exists')</script> ";
+        unset($_SESSION['name']);
+
     }
-    if($_SESSION['name'] == "logout")
+    elseif($_SESSION['name'] == "logout")
     {
         echo "<script>alert('Session Expired')</script> ";
+        unset($_SESSION['name']);
     }
-    if($_SESSION['name'] == "notexisted")
+    elseif($_SESSION['name'] == "notexisted")
     {
         echo "<script>alert('New User register yourself')</script> ";
+        unset($_SESSION['name']);
     }
-    if($_SESSION['name'] == "registred")
+    elseif($_SESSION['name'] == "registred")
     {
         echo "<script>alert('Welcome user ,you have successfully registered. Login after some time as it take as while for system approval.')</script> ";
+        unset($_SESSION['name']);
     }
-    if($_SESSION['name'] == "error")
+    elseif($_SESSION['name'] == "error")
     {
         echo "<script>alert('Invalid combinations or application under scrutiny')</script> ";
+        unset($_SESSION['name']);
     }
-    $_SESSION['name']="";
+    elseif($_SESSION['name'] == "removed")
+    {
+        echo "<script>alert('User not approved by system.You cant use this this system.')</script> ";
+        unset($_SESSION['name']);
+    }
 }
 else
 {
-
 }
 
 ?>

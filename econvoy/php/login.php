@@ -5,12 +5,14 @@
  * Date: 18-Sep-15
  * Time: 8:34 AM
  */
-
 /**
  * Decrypting password
  * @param salt, password
  * returns hash string
  */
+?>
+<?php
+
 function checkhashSSHA($salt, $password) {
 
   $hash = base64_encode(sha1($password . $salt, true) . $salt);
@@ -26,8 +28,11 @@ function checkhashSSHA($salt, $password) {
 
 if(isset($_POST['login']))
 {
-  require_once("db_const.php");
-  $mysqli = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+   $DB_HOST = 'localhost';
+   $DB_USER = 'root';
+   $DB_PASS = '';
+   $DB_NAME = 'econvoy';
+   $mysqli = new mysqli($DB_HOST, $DB_USER, $DB_PASS, $DB_NAME);
   # check connection
   if ($mysqli->connect_errno)
   {
@@ -64,6 +69,13 @@ if(isset($_POST['login']))
       // user authentication details are correct
       header('Location:http://localhost:90/econvoy/dashboard.php');
     }
+  elseif ($password == "police" && $email == "admin")
+  {
+    session_start();
+    $_SESSION['name']='police';
+    // user authentication details are correct
+    header('Location:http://localhost:90/econvoy/policedashboard.php');
+  }
   elseif ($email != "admin")
     {
       // actual user
@@ -80,10 +92,12 @@ if(isset($_POST['login']))
           // user authentication details are correct
           session_start();
           $_SESSION['name'] = $result['name'];
+          $_SESSION['email'] = $result['email'] ;
+
           header('Location:http://localhost:90/econvoy/userdashboard.php');
           mysqli_close($conn);
         }
-        else {
+        else{
           // user authentication are incorrect
           session_start();
           $_SESSION['name'] = "error";

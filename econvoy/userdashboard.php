@@ -6,24 +6,12 @@
  * Time: 1:38 AM
  */
 session_start();
+$_SESSION['error']="";
+$name = $_SESSION['name'];
 if(isset($_SESSION['name']))
 {
-    if($_SESSION['name'] == "")
-    {
-        $_SESSION['name'] = "logout";
-        header('Location:http://localhost:90/econvoy/');
-    }
-    elseif($_SESSION['name'])
-    {
-        $name = $_SESSION['name'];
-
-    }
-    else
-    {
-        $_SESSION['name'] = "logout";
-        header('Location:http://localhost:90/econvoy/');
-    }
 }
+
 else {
 
     $_SESSION['name'] = "logout";
@@ -88,13 +76,44 @@ else {
                 <li><a href="#tf-services" class="page-scroll">Services</a></li>
                 <li><a href="#tf-testimonials" class="page-scroll">FeedBack & Reviews</a></li>
                 <li><a href="#tf-team" class="page-scroll">Team</a></li>
-                <li><a href="#tf-contact" class="page-scroll">Contact</a></li>
                 <li><a href="php/logout.php" class="page-scroll">Logout</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profile<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Update Profile</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><button type="button" class="btn " data-toggle="modal" data-target="#myModal">Give Feedback</button></li>
+                    </ul>
+                </li>
 
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
+<!-- Feed Back Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">FeedBack</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form" action="php/feedback.php" method="Post">
+                    <div class="form-group">
+                        <label for="exampleInputName2">Message!!</label>
+                        <textarea class="form-control" rows="3" name="feedback" placeholder="Your Feedback Please!!"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail2">Rating out of 10</label>
+                        <input type="number" class="form-control" name="rating" id="exampleInputEmail2" placeholder="5">
+                    </div>
+                    <button type="submit" name="submit" class="btn btn-default">Send </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- Home Page
 ==========================================-->
@@ -148,12 +167,11 @@ else {
         </div>
     </div>
 </div>
-
 <!-- Services Section
 ==========================================-->
 <div id="tf-services" class="text-center">
     <div class="container">
-        <div class="section-title center">
+        <div class="section-title center" style="margin-top:-50px;">
             <h2>Take a look at <strong>our services</strong></h2>
             <div class="line">
                 <hr>
@@ -226,17 +244,23 @@ else {
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
                     <div id="testimonial" class="owl-carousel owl-theme">
-                        <div class="item">
-                            <h5>
-                                Being a law student this site helps me a lot in my day to day activities and it keeps me aware about all the IPC section as and when I need them. I love this portal.
-                            </h5>
-                            <p><strong>Shyam Khanna</strong> <br>Student <br>Indian Law School</p>
-                        </div>
-
-                        <div class="item">
-                            <h5>It provides better awareness to the people related to the crime stuff like how to make FIR, how to file a pitition etc. I appriciate this portal.</h5>
-                            <p><strong>Shrinath Shinde</strong><br> Sub-Inspector <br> Anand Police</p>
-                        </div>
+                        <?php
+                        $conn = new mysqli('localhost', 'root', '', 'econvoy');
+                        $sql = "SELECT * FROM `feedback`";
+                        $result = mysqli_query($conn, $sql);
+                        ?>
+                        <?php
+                        while($row = mysqli_fetch_array($result)) {
+                            ?>
+                            <div class="item">
+                                <h5><?=$row['feedback'] ?></h5>
+                                <p><strong><?=$row['name'] ?></strong> <br> <?php echo "Ratings "; print $row['rating'];echo "/10"; ?><br>
+                                </p>
+                            </div>
+                        <?php
+                        }
+                        mysqli_close($conn);
+                        ?>
                     </div>
                 </div>
             </div>
@@ -306,56 +330,6 @@ else {
         </div>
     </div>
 </div>
-
-
-<!-- Contact Section
-==========================================-->
-<div id="tf-contact" class="text-center">
-    <div class="container">
-
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-
-                <div class="section-title center">
-                    <h2>Feel free to <strong>contact us</strong></h2>
-                    <div class="line">
-                        <hr>
-                    </div>
-                    <div class="clearfix"></div>
-                    <small><em>Provide genuine details</em></small>
-                </div>
-
-                <form>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="exampleInputEmail1">Email address</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Password</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Message</label>
-                        <textarea class="form-control" rows="3"></textarea>
-                    </div>
-
-                    <button type="submit" class="btn tf-btn btn-default">Submit</button>
-                </form>
-
-            </div>
-        </div>
-
-    </div>
-</div>
-
-<!-- logout Section
-==========================================-->
 
 
 <nav id="footer">
