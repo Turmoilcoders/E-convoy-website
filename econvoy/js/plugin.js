@@ -3,7 +3,7 @@
  */
 
 // Toast Notification
-$(window).load(function() {
+/*$(window).load(function() {
     setTimeout(function() {
         Materialize.toast('<span>Hello! Welcome.</span>', 1500);
     }, 1500);
@@ -11,6 +11,7 @@ $(window).load(function() {
         Materialize.toast('<span>You have task to </span><a class="btn-flat yellow-text" href="#">Do<a>', 3000);
     }, 5000);
 });
+*/
 //sidebar for mobile closing and opening
 $('.sidebar-collapse ').sideNav({
         menuWidth: 240, // Default is 240
@@ -26,5 +27,47 @@ $('.modal-trigger').leanModal({
         out_duration: 200 // Transition out duration
     }
 );
+
+/**
+ * Created by Arvind on 16-Sep-15.
+ */
+$(document).ready(
+
+    function() {
+        $("html").niceScroll();
+    }
+
+);
+$("#testimonial").owlCarousel({
+    navigation : false, // Show next and prev buttons
+    slideSpeed : 300,
+    paginationSpeed : 400,
+    singleItem: true
+});
+
+$('a.page-scroll').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+            $('html,body').animate({
+                scrollTop: target.offset().top - 40
+            }, 900);
+            return false;
+        }
+    }
+});
+
+//sidebar for mobile closing and opening
+$('.sidebar-collapse ').sideNav({
+        menuWidth: 240, // Default is 240
+        edge: 'left', // Choose the horizontal origin
+        closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+    }
+);
+
+// Materialize Tabs
+$('.tab-demo').show().tabs();
+$('.tab-demo-active').show().tabs();
 
 

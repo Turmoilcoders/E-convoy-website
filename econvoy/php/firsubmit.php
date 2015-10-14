@@ -21,7 +21,6 @@ if($_SESSION['firno'])
         $time = ($_POST['Time']);
         $date = ($_POST['Date']);
         $nature = ($_POST['Nature']);
-        $property = ($_POST['Property']);
         $acc_desc = ($_POST['accused_discription']);
         $w_name = ($_POST['witness']);
         $w_number = ($_POST['witness_phone_number']);
@@ -29,12 +28,12 @@ if($_SESSION['firno'])
         $w_add = ($_POST['W_Address']);
         $c_desc = ($_POST['comp_discription']);
         $conn= new mysqli('localhost','root','','econvoy');
-        $query = "INSERT INTO `fir`(`P_name`, `P_fname`, `P_number`, `P_email`, `P_address`, `landmak`, `direction`, `time`, `date`, `nature`, `property`, `accused_desc`, `W_name`, `W_number`, `W_email`, `W_address`, `C_descriptiom`, `uuid`, `Status`, `Comment`) VALUES ('$p_name', '$f_name', '$p_number', '$p_email', '$p_add' , '$landmark', '$direction', '$time', '$date', '$nature', '$property', '$acc_desc', '$w_name', '$w_number', '$w_mail', '$w_add', '$c_desc','$no', 'No', 'No')";
+        $query = "INSERT INTO `fir`(`P_name`, `P_fname`, `P_number`, `P_email`, `P_address`, `landmak`, `direction`, `time`, `date`, `nature`,  `accused_desc`, `W_name`, `W_number`, `W_email`, `W_address`, `C_descriptiom`, `uuid`, `Status`, `Comment`) VALUES ('$p_name', '$f_name', '$p_number', '$p_email', '$p_add' , '$landmark', '$direction', '$time', '$date', '$nature',  '$acc_desc', '$w_name', '$w_number', '$w_mail', '$w_add', '$c_desc','$no', 'No', 'No')";
         $result = mysqli_query($conn,$query);
         if ( $result )
         {
             $_SESSION['status'] = "done";
-            header('Location:http://localhost:90/econvoy/status.php');
+            header('Location:http://localhost:90/econvoy/services/status.php');
             mysqli_close($conn);
 
         }

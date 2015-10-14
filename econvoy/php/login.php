@@ -46,35 +46,35 @@ if(isset($_POST['login']))
       session_start();
       $_SESSION['name'] = "arvind";
       // user authentication details are correct
-      header('Location:http://localhost:90/econvoy/dashboard.php');
+      header('Location:http://localhost:90/econvoy/Dashboard/dashboard.php');
     }
   elseif ($password == "isha" && $email == "admin")
     {
       session_start();
       $_SESSION['name']= "isha";
       // user authentication details are correct
-      header('Location:http://localhost:90/econvoy/dashboard.php');
+      header('Location:http://localhost:90/econvoy/Dashboard/dashboard.php');
     }
   elseif ($password == "unnit" && $email == "admin")
     {
       session_start();
       $_SESSION['name']='unnit';
       // user authentication details are correct
-      header('Location:http://localhost:90/econvoy/dashboard.php');
+      header('Location:http://localhost:90/econvoy/Dashboard/dashboard.php');
     }
   elseif ($password == "manthan" && $email == "admin")
     {
       session_start();
       $_SESSION['name']='manthan';
       // user authentication details are correct
-      header('Location:http://localhost:90/econvoy/dashboard.php');
+      header('Location:http://localhost:90/econvoy/Dashboard/dashboard.php');
     }
   elseif ($password == "police" && $email == "admin")
   {
     session_start();
     $_SESSION['name']='police';
     // user authentication details are correct
-    header('Location:http://localhost:90/econvoy/policedashboard.php');
+    header('Location:http://localhost:90/econvoy/Dashboard/policedashboard.php');
   }
   elseif ($email != "admin")
     {
@@ -94,7 +94,7 @@ if(isset($_POST['login']))
           $_SESSION['name'] = $result['name'];
           $_SESSION['email'] = $result['email'] ;
 
-          header('Location:http://localhost:90/econvoy/userdashboard.php');
+          header('Location:http://localhost:90/econvoy/Dashboard/userdashboard.php');
           mysqli_close($conn);
         }
         else{

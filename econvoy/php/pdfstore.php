@@ -90,7 +90,7 @@ if(isset($_SESSION['name']))
             $mpdf=new mPDF('c');
             $mpdf->WriteHTML($html);
             $mpdf->Output($path1,'F');
-            header('Location:http://localhost:90/econvoy/fir.php');
+            header('Location:http://localhost:90/econvoy/services/fir.php');
             exit;
 
             //==============================================================
@@ -101,7 +101,7 @@ if(isset($_SESSION['name']))
         else
         {
             $_SESSION['error'] == "error";
-            header('Location:http://localhost:90/econvoy/fir.php');
+            header('Location:http://localhost:90/econvoy/services/fir.php');
         }
     }
 

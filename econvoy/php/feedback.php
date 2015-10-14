@@ -20,7 +20,7 @@ if (isset($_POST['submit'])) {
         // get user details
         $_SESSION['status'] = "thankyou";
         mysqli_close($conn);
-        header('Location:http://localhost:90/econvoy/userdashboard.php');
+        header('Location:http://localhost:90/econvoy/Dashboard/userdashboard.php');
     }
 
 

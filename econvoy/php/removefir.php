@@ -14,13 +14,13 @@ $result = mysqli_query($conn,$sql);
 if(mysqli_query($conn,$sql))
 {
 echo "<script>alert('User Table Updated')</script>";
-header('Location:http://localhost:90/econvoy/dashboard.php');
+header('Location:http://localhost:90/econvoy/Dashboard/dashboard.php');
 mysqli_close($conn);
 }
 else
 {
 echo "<script>alert(' Fatal Error')</script>";
-header('Location:http://localhost:90/econvoy/dashboard.php');
+header('Location:http://localhost:90/econvoy/Dashboard/dashboard.php');
 mysqli_close($conn);
 
 }
